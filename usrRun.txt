@@ -1,0 +1,58 @@
+run
+escape
+out
+exit
+sneak
+hide
+slink
+bury 
+camouflage 
+cover 
+disguise 
+hole up 
+mask 
+obscure 
+plant 
+protect 
+shelter 
+shield 
+smuggle 
+stash  
+suppress 
+tuck away 
+withhold 
+adumbrate 
+cache 
+cloak 
+curtain 
+dissemble 
+ditch 
+duck 
+eclipse 
+ensconce 
+harbor  
+reserve 
+screen 
+secrete 
+shadow 
+shroud 
+squirrel 
+stifle 
+veil 
+blot out 
+go into hiding 
+go underground 
+hold back 
+hush up  
+keep from 
+keep secret 
+lie low 
+lock up 
+not give away 
+not tell 
+put out of the way 
+salt away 
+stow away 
+take cover  
+
+
