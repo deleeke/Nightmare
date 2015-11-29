@@ -42,7 +42,7 @@ class Scene(object):
         lines = open(textfile)
         lines = lines.read()
         lines = lines.split('-')
-        line = lines[random.randint(0,len(lines))]
+        line = lines[random.randint(0,(len(lines)-1))]
         return line
 
     def printslow(self, textfile, x, y):
@@ -64,18 +64,18 @@ def ExeScene(scenename):
     usrinput = usrinput.split(' ')
     keywords = False
     for word in usrinput:
-        for i in range(0,len(usrAction)):
+        for i in range(0, len(usrAction)):
             if word in usrAction[i]:
                 keywords = True
                 print aiLines[i][random.randint(0,(len(aiLines[i][:])-1))]
                 sleep(3)
                 print BUZZER
-        if keywords == False:
-            print scenename.printline(scenename.storytxt, -1)
-            sleep(2)
-            print scenename.randline(scenename.usrtxt)
-            sleep(2)
-            scenename.printslow(scenename.failtxt, 0, -1)
+    if keywords == False:
+        print scenename.printline(scenename.storytxt, -1)
+        sleep(2)
+        print scenename.randline(scenename.usrtxt)
+        sleep(2)
+        scenename.printslow(scenename.failtxt, 0, (len(scenename.failtxt)-1))
 
 runAway = AIDict()
 runAway.importData('usrRun.txt','aiRunresponse.txt')
@@ -87,10 +87,10 @@ love.importData('usrLove.txt', 'aiLoveResponse.txt')
 usrAction = [attack.usrKeywords, runAway.usrKeywords, love.usrKeywords]
 aiLines = [attack.aiResponse, runAway.aiResponse, love.aiResponse]
 
-start = Scene('mainentry.txt','','')
-date = Scene('dateEntry.txt', 'quotes.txt','datefail.txt')
-job = Scene('','','')
-fridge = Scene('','','')
+start = Scene('mainEntry.txt','','')
+date = Scene('dateEntry.txt', 'dateQuotes.txt','dateFail.txt')
+job = Scene('jobEntry.txt','jobQuotes.txt','jobFail.txt')
+fridge = Scene('fridgeEntry.txt','fridgeQuotes.txt','fridgeFail.txt')
 
 BUZZER = '\n\n*******bbbbzzzzzzzzzz*******\n\n'
 

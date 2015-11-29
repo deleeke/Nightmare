@@ -5,4 +5,6 @@ content and are designed to be enlarged.
 Note that some are seperated simply by \n and others that contain
 multiple sentence phrases are seperated by '-'.
 
+Run nightmare.py to play game
+
 Written for Python 2.x
