@@ -6,6 +6,9 @@ incursion
 intervention
 intrusion
 invade
+poop
+punch
+kill
 offensive
 onslaught
 outbreak
@@ -34,3 +37,4 @@ thrust
 volley
 assail
 dirtydeed
+gouge
